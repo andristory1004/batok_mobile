@@ -8,6 +8,9 @@ import 'package:batox_mobile/Page/Preference/preference.dart';
 import 'package:batox_mobile/Page/Preference/vehiclesPage.dart';
 import 'package:batox_mobile/Page/Splash/getStarted.dart';
 import 'package:batox_mobile/Page/Splash/splashScreen.dart';
+import 'package:batox_mobile/Page/Vehicle/detailProduct.dart';
+import 'package:batox_mobile/Page/Vehicle/listProduct.dart';
+import 'package:batox_mobile/Page/Vehicle/mainPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -34,6 +37,6 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Batox Mobile',
         theme: ThemeData(fontFamily: 'Comfortaa'),
-        home: timeLine());
+        home: detailProduct());
   }
 }
