@@ -1,4 +1,5 @@
 import 'package:batox_mobile/Style/customColor.dart';
+import 'package:batox_mobile/Widget/formatImageProduct.dart';
 import 'package:flutter/material.dart';
 
 class listProduct extends StatefulWidget {
@@ -12,28 +13,28 @@ class _listProductState extends State<listProduct> {
   List<Map<String, String>> listModel = [
     {
       'image': "images/mobil.png",
-      'title': "Citroen CX pallas 1978",
+      'namaProduct': "Citroen CX pallas 1978",
       'jarak': "200 KM",
       'lokasi': "Jakarta Pusat",
       "harga": "Rp. 170.000.000"
     },
     {
       'image': "images/mobil2.png",
-      'title': "Holden bellmont st wagon Tahun 1976",
+      'namaProduct': "Holden bellmont st wagon Tahun 1976",
       'jarak': "200 KM",
       'lokasi': "Jakarta Pusat",
       "harga": "Rp. 170.000.000"
     },
     {
       'image': "images/mobil3.png",
-      'title': "Citroen CX pallas 1978",
+      'namaProduct': "Citroen CX pallas 1978",
       'jarak': "200 KM",
       'lokasi': "Jakarta Pusat",
       "harga": "Rp. 170.000.000"
     },
     {
       'image': "images/mobil2.png",
-      'title': "Holden bellmont st wagon Tahun 1976",
+      'namaProduct': "Holden bellmont st wagon Tahun 1976",
       'jarak': "200 KM",
       'lokasi': "Jakarta Pusat",
       "harga": "Rp. 170.000.000"
@@ -109,12 +110,7 @@ class _listProductState extends State<listProduct> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Container(
-                            width: double.infinity,
-                            height: 217,
-                            color: Colors.grey.shade200,
-                            child: Image(image: AssetImage("${data['image']}")),
-                          ),
+                          formatImageProduct(imageUrl: "${data['image']}"),
                           Container(
                             padding: EdgeInsets.all(32),
                             width: double.infinity,

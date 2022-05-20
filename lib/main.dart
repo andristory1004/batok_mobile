@@ -8,7 +8,11 @@ import 'package:batox_mobile/Page/Preference/preference.dart';
 import 'package:batox_mobile/Page/Preference/vehiclesPage.dart';
 import 'package:batox_mobile/Page/Splash/getStarted.dart';
 import 'package:batox_mobile/Page/Splash/splashScreen.dart';
-import 'package:batox_mobile/Page/Vehicle/detailProduct.dart';
+import 'package:batox_mobile/Page/Vehicle/Detail/detailProduct.dart';
+import 'package:batox_mobile/Page/Vehicle/Detail/itemDetail.dart';
+import 'package:batox_mobile/Page/Vehicle/buyIt.dart';
+import 'package:batox_mobile/Page/Vehicle/favoriteProduct.dart';
+import 'package:batox_mobile/Page/Vehicle/filterPage.dart';
 import 'package:batox_mobile/Page/Vehicle/listProduct.dart';
 import 'package:batox_mobile/Page/Vehicle/mainPage.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +36,9 @@ class MyApp extends StatelessWidget {
           '/addVehicle': (BuildContext context) => addVehicles(),
           '/selectYear': (BuildContext context) => selectYear(),
           '/prefer1': (BuildContext context) => prefer1(),
-          '/prefer2': (BuildContext context) => prefer2()
+          '/prefer2': (BuildContext context) => prefer2(),
+          '/listProduct': (BuildContext context) => listProduct(),
+          '/buyIt': (BuildContext context) => buyIt()
         },
         debugShowCheckedModeBanner: false,
         title: 'Batox Mobile',
